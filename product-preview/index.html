@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/images/favicon-32x32.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>
+      Product Preview Card Component &mdash; Frontend Mentor Challenge
+    </title>
+  </head>
+  <body class="flex items-center justify-center min-h-screen bg-cream">
+    <div
+      class="flex flex-col bg-white max-w-5xl shadow rounded-2xl overflow-hidden mx-12 my-12 md:flex-row md:my-0"
+    >
+      <div
+        class="bg-[url('/images/image-product-desktop.jpg')] bg-cover bg-center h-96 md:h-auto md:flex-1"
+        role="img"
+        aria-label="Product Image"
+      ></div>
+      <div class="flex-1 self-center p-12">
+        <span
+          class="text-2xl text-grayish-blue uppercase tracking-[.5rem] mb-8 block font-monoserrat"
+          >Perfume</span
+        >
+        <h1 class="text-4xl font-fraunces text-dark-blue mb-8 sm:text-6xl">
+          Gabrielle Essence Eau De Parfum
+        </h1>
+        <p class="text-xl font-monoserrat text-grayish-blue leading-8 mb-8">
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+        <div class="flex gap-8 mb-8 items-center">
+          <span class="text-6xl font-fraunces text-dark-cyan">$149.99</span>
+          <span class="text-2xl text-grayish-blue font-monoserrat"
+            ><del>$169.99</del></span
+          >
+        </div>
+        <button
+          class="py-6 px-9 rounded-xl bg-dark-cyan text-white flex items-center gap-4 font-monoserrat w-full justify-center hover:bg-light-cyan"
+        >
+          <img src="/images/icon-cart.svg" />
+          <span class="text-2xl">Add to Cart</span>
+        </button>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
